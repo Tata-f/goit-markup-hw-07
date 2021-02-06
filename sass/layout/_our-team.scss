@@ -1,0 +1,82 @@
+.our-team {
+  padding-top: $padding-94;
+  padding-bottom: $padding-94;
+  background-color: #f5f4fa;
+}
+
+.our-team .list {
+  display: $display-flex;
+  text-align: $text-align-center;
+}
+
+.our-team .cards {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 0px 0px 4px 4px;
+
+  & + .cards {
+    margin-left: $margin-30;
+  }
+
+  .cards-title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 31px;
+    padding-right: 31px;
+    background-color: $secondary-text-color;
+  }
+
+  .names {
+    margin-top: $margin-0;
+    margin-bottom: 10px;
+
+    font-weight: $font-weight-500;
+    font-size: $font-size-16;
+    line-height: $line-height-1-2;
+    letter-spacing: $letter-spacing-03em;
+    color: $title-color;
+  }
+
+  .professions {
+    margin-top: $margin-0;
+    margin-bottom: 16px;
+
+    font-size: $font-size-16;
+    line-height: $line-height-1-2;
+    letter-spacing: $letter-spacing-03em;
+  }
+}
+
+.icons-networks {
+  display: $display-flex;
+  justify-content: space-between;
+  width: 206px;
+  margin-top: $margin-0;
+
+  .networks-list {
+    width: 44px;
+    height: 44px;
+
+    .networks-link {
+      display: $display-flex;
+      transition-property: fill, background-color;
+      transition-duration: $duration-250;
+      transition-timing-function: $timing-function;
+
+      width: $width-height-100;
+      height: $width-height-100;
+      border-radius: 50%;
+      align-items: $align-items-center;
+      justify-content: $justify-content-center;
+
+      fill: $fill-icons;
+
+      &:hover,
+      &:focus {
+        background-color: $accent-color;
+        fill: $secondary-text-color;
+      }
+    }
+  }
+}
