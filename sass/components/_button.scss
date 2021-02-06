@@ -1,41 +1,52 @@
 .button {
-  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
   min-width: 200px;
-
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 32px;
-  padding-left: 32px;
-  border: 1px solid transparent;
-  border-radius: $border-radius-4;
-
-  font-weight: $font-weight-700;
-  font-size: $font-size-16;
-  line-height: 1.8;
-  background-color: $accent-color;
-  color: $secondary-text-color;
-}
-
-.modal button {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 55px;
-  padding-left: 55px;
-  width: 200px;
   height: 50px;
 
   font-weight: $font-weight-700;
   font-size: $font-size-16;
-  line-height: 1.9;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
   border-radius: $border-radius-4;
-
-  align-self: center;
   letter-spacing: 0.06em;
+  background: $accent-color;
   color: $secondary-text-color;
-  background-color: $accent-color;
 
   cursor: $cursor-pointer;
+}
+
+.hero .button {
+  display: inline-block;
+  padding-right: 32px;
+  padding-left: 32px;
+
+  line-height: 1.8;
+}
+
+.modal .button {
+  padding-right: 55px;
+  padding-left: 55px;
+
+  line-height: 1.9;
+
+  align-self: center;
+}
+
+.subscribe-form .button {
+  display: $display-flex;
+  align-items: $align-items-center;
+  justify-content: $justify-content-center;
+
+  padding-right: 28px;
+  padding-left: 28px;
+
+  line-height: 2;
+  text-align: $text-align-center;
+
+  svg {
+    margin-left: 10px;
+    align-items: $align-items-center;
+  }
 }
