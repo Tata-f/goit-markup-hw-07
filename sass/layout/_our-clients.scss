@@ -1,0 +1,37 @@
+.our-clients {
+  padding-top: $padding-94;
+  padding-bottom: $padding-94;
+}
+
+.clients {
+  display: $display-flex;
+  justify-content: space-between;
+  width: 1170px;
+}
+
+.clients-list {
+  width: 170px;
+  height: 90px;
+}
+
+.clients-link {
+  display: $display-flex;
+  transition-property: fill, border;
+  transition-duration: $duration-250;
+  transition-timing-function: $timing-function;
+
+  align-items: $align-items-center;
+  justify-content: $justify-content-center;
+  width: $width-height-100;
+  height: $width-height-100;
+  border: 1px solid $fill-icons;
+  border-radius: $border-radius-4;
+
+  fill: $fill-icons;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
+}
