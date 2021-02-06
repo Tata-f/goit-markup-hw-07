@@ -1,0 +1,108 @@
+.header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+
+  .container {
+    display: $display-flex;
+    align-items: $align-items-center;
+
+    nav {
+      display: $display-flex;
+    }
+  }
+}
+
+.site-nav {
+  display: $display-flex;
+
+  li + li {
+    margin-left: 50px;
+  }
+
+  a {
+    display: $display-flex;
+    flex-direction: $flex-direction-column;
+    transition-property: color;
+    transition-duration: $duration-250;
+    transition-timing-function: $timing-function;
+
+    padding-bottom: 32px;
+    padding-top: 32px;
+
+    font-weight: $font-weight-500;
+    line-height: $line-height-1-1;
+    letter-spacing: 0.02em;
+    color: $title-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+
+.header .contacts {
+  display: $display-flex;
+  margin-left: $margin-auto;
+
+  li + li {
+    margin-left: 50px;
+  }
+
+  a {
+    display: $display-flex;
+    flex-direction: row-reverse;
+    align-items: $align-items-center;
+
+    transition-property: color, fill;
+    transition-duration: $duration-250;
+    transition-timing-function: $timing-function;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: $font-weight-500;
+    line-height: $line-height-1-1;
+    letter-spacing: 0.02em;
+
+    fill: $fill-icons;
+    color: $primary-text-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      fill: $accent-color;
+    }
+  }
+
+  .icon {
+    margin-right: 10px;
+  }
+}
+
+.header .current {
+  position: $position-relative;
+  color: $accent-color;
+
+  &::after {
+    content: '';
+    position: $position-absolute;
+    left: $position-0;
+    bottom: $position-0;
+
+    border-radius: 2px;
+    width: $width-height-100;
+    height: 4px;
+    margin-bottom: -2px;
+
+    transition-property: scaleY;
+    transition-duration: $duration-250;
+    transition-timing-function: $timing-function;
+    transform-origin: bottom;
+
+    background-color: $accent-color;
+  }
+
+  &:hover::after {
+    transform: scaleY(2);
+  }
+}
