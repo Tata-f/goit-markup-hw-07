@@ -1,0 +1,35 @@
+.hero {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: $margin-auto;
+  margin-right: $margin-auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-color: $background-color;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/команда.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .container {
+    width: 696px;
+    text-align: $text-align-center;
+  }
+}
+
+.hero-title {
+  margin-top: $margin-0;
+  margin-bottom: $margin-30;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: $text-uppercase;
+  color: $secondary-text-color;
+}
