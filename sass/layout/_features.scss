@@ -1,0 +1,41 @@
+.features {
+  padding-top: $padding-94;
+  padding-bottom: $padding-94;
+}
+
+.features-list {
+  display: $display-flex;
+
+  .icon {
+    display: $display-flex;
+
+    margin-bottom: $margin-30;
+    width: 270px;
+    height: 120px;
+    justify-content: $justify-content-center;
+    align-items: $align-items-center;
+    background-color: #f5f4fa;
+  }
+
+  p {
+    margin-top: $margin-0;
+    margin-bottom: $margin-0;
+
+    line-height: 1.7;
+    letter-spacing: $letter-spacing-03em;
+  }
+
+  li {
+    width: 270px;
+
+    & + li {
+      margin-left: $margin-30;
+    }
+  }
+
+  .features-list-title {
+    margin-bottom: 10px;
+    color: $title-color;
+    font-family: 'Roboto';
+  }
+}
