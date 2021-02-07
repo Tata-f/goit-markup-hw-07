@@ -30,11 +30,11 @@
 }
 
 footer .contacts {
-  li + li {
+  .list-item + .list-item {
     margin-top: 9px;
   }
 
-  a {
+  .link {
     transition-property: color;
     transition-duration: $duration-250;
     transition-timing-function: $timing-function;

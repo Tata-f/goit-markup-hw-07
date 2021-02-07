@@ -9,7 +9,7 @@
   display: $display-flex;
   flex-wrap: wrap;
 
-  li {
+  .list-item {
     width: 370px;
     margin-right: $margin-30;
     margin-bottom: $margin-30;
@@ -48,7 +48,7 @@
     background-color: $accent-color;
   }
 
-  h2 {
+  .title {
     margin-top: $margin-0;
     margin-bottom: 4px;
 
@@ -59,7 +59,7 @@
     color: $title-color;
   }
 
-  p {
+  .desc {
     margin-top: $margin-0;
     margin-bottom: $margin-0;
 

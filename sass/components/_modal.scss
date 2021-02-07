@@ -72,15 +72,14 @@
   opacity: 1;
   background-color: $secondary-text-color;
 
-  p {
-    margin-top: $margin-0;
+  .subtitle {
     margin-bottom: 12px;
 
-    font-weight: $font-weight-700;
     font-size: 20px;
     line-height: $line-height-1-2;
     text-align: $text-align-center;
-    letter-spacing: $letter-spacing-03em;
+    text-transform: none;
+
     color: $title-color;
   }
 }
@@ -158,16 +157,14 @@
   }
 }
 
-.modal .agreement {
+.agreement {
   margin-bottom: 30px;
   align-self: center;
 
   line-height: 0.6;
   color: $primary-text-color;
 
-  a {
-    display: inline;
-
+  .link {
     text-decoration: underline;
     line-height: 1.7;
     letter-spacing: $letter-spacing-03em;

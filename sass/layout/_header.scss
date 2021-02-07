@@ -14,11 +14,11 @@
 .site-nav {
   display: $display-flex;
 
-  li + li {
+  .list-item + .list-item {
     margin-left: 50px;
   }
 
-  a {
+  .link {
     display: $display-flex;
     flex-direction: $flex-direction-column;
     transition-property: color;
@@ -44,11 +44,11 @@
   display: $display-flex;
   margin-left: $margin-auto;
 
-  li + li {
+  .list-item + .list-item {
     margin-left: 50px;
   }
 
-  a {
+  .link {
     display: $display-flex;
     flex-direction: row-reverse;
     align-items: $align-items-center;

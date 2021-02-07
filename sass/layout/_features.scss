@@ -17,7 +17,7 @@
     background-color: #f5f4fa;
   }
 
-  p {
+  .desc {
     margin-top: $margin-0;
     margin-bottom: $margin-0;
 
@@ -25,10 +25,10 @@
     letter-spacing: $letter-spacing-03em;
   }
 
-  li {
+  .list-item {
     width: 270px;
 
-    & + li {
+    & + .list-item {
       margin-left: $margin-30;
     }
   }

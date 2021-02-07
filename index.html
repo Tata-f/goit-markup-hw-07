@@ -19,22 +19,22 @@
                 <a href="#" class="logo header-logo"><span class="logo-web">Web</span>Studio</a>
             
                 <ul class="site-nav list">
-                    <li><a href="#" class="current">Студия</a></li>
-                    <li><a href="./portfolio.html">Портфолио</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li class="list-item"><a href="#" class="link current">Студия</a></li>
+                    <li class="list-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li class="list-item"><a href="#" class="link">Контакты</a></li>
                 </ul>
             </nav>
             
             <ul class="contacts list">
-                <li>
-                    <a href="mailto:info@devstudio.com">info@devstudio.com 
+                <li class="list-item">
+                    <a href="mailto:info@devstudio.com" class="link">info@devstudio.com 
                         <svg class="icon" width="16" height="12">
                             <use href="./images/sprite.svg#icon-envelope"></use>
                         </svg>
                     </a>
                 </li>
-                <li>
-                    <a href="tel:+380961111111">+38 096 111 11 11 
+                <li class="list-item">
+                    <a href="tel:+380961111111" class="link">+38 096 111 11 11 
                         <svg  class="icon" width="10" height="16">
                             <use href="./images/sprite.svg#icon-phone"></use>
                         </svg>
@@ -58,44 +58,44 @@
        <!-- <h2 class="section-title">Особенности</h2> -->
 
        <ul class="features-list list">
-           <li>
+           <li class="list-item">
                <div class="icon">
                    <svg width="70" height="70">
                    <use href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
                 </div>
                <h3 class="features-list-title subtitle">Внимание к деталям</h3>
-               <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+               <p class="desc">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
            </li>
 
-           <li>
+           <li class="list-item">
             <div class="icon">
                 <svg width="70" height="70">
                     <use href="./images/sprite.svg#icon-clock"></use>
                 </svg>
             </div>
                <h3 class="features-list-title subtitle">Пунктуальность</h3>
-               <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+               <p class="desc">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
            </li>
 
-           <li>
+           <li class="list-item">
             <div class="icon">
                 <svg width="70" height="70">
                     <use href="./images/sprite.svg#icon-diagram"></use>
                 </svg>
             </div>
                <h3 class="features-list-title subtitle">Планирование</h3>
-               <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+               <p class="desc">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
            </li>
 
-           <li>
+           <li class="list-item">
             <div class="icon">
                 <svg width="70" height="70">
                     <use href="./images/sprite.svg#icon-astronaut"></use>
                 </svg>
             </div>
                <h3 class="features-list-title subtitle">Современные технологии</h3>
-               <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+               <p class="desc">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
            </li>
        </ul>
        </div>
@@ -107,25 +107,25 @@
             <h2 class="section-title">Чем мы занимаемся</h2>
             
             <ul class="list">
-                <li>
+                <li class="list-item">
                     <div class="our-work-card">
                         <img src="./images/box1.jpg" alt="Верстка" width="370">
-                        <p>Десктопные приложения</p>
+                        <h3 class="subtitle">Десктопные приложения</h3>
                     </div>
                 </li>
                 
-                <li>
+                <li class="list-item">
                     <div class="our-work-card">
                         <img src="./images/box2.jpg" alt="Тестирование" width="370">
-                        <p>Мобильные приложения</p>
+                        <h3 class="subtitle">Мобильные приложения</h3>
                     </div>
                 </li>
 
                 
-                <li>
+                <li class="list-item">
                     <div class="our-work-card">
                         <img src="./images/box3.jpg" alt="Дизайн" width="370">
-                        <p>Дизайнерские решения</p>
+                        <h3 class="subtitle">Дизайнерские решения</h3>
                     </div>
                 </li>
             </ul>
@@ -366,8 +366,8 @@
             <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
         
             <ul class="contacts list">
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="list-item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                <li class="list-item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
             </ul>
         </div>
         
@@ -430,7 +430,7 @@
             </svg>
 
         </div>
-            <p>Оставьте свои данные, мы вам перезвоним</p>
+            <h3 class="subtitle">Оставьте свои данные, мы вам перезвоним</h3>
 
         <form class="form">
             <label for="name" class="form-label">Имя</label>
@@ -464,7 +464,7 @@
             
             <div class="agreement">
             <input type="checkbox" name="agreement" id="agreement" class="checkbox">
-               <label for="agreement" class="label-checkbox">Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#">Условия договора</a></label>
+               <label for="agreement" class="label-checkbox">Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#" class="link">Условия договора</a></label>
                
             </div>
             
