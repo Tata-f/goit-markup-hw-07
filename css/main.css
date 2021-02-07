@@ -155,15 +155,7 @@ img {
   width: 100%;
   height: 4px;
   margin-bottom: -2px;
-  transition-property: scaleY;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transform-origin: bottom;
   background-color: #2196f3;
-}
-
-.header .current:hover::after {
-  transform: scaleY(2);
 }
 
 .button {
